@@ -1,8 +1,11 @@
 import './App.scss'
-import Table from "./components/Plate/Plate.jsx";
 import Plate from "./components/Plate/Plate.jsx";
 import Banner from "./components/Banner/Banner.jsx";
-import ReactDOM from 'react-dom'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons'
+
+library.add(fab, faCheckSquare, faCoffee)
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const plates = [{
@@ -33,16 +36,15 @@ function App() {
 
     return (
         <>
-
             <header className='main_menu'>
-                <div className="logo"></div>
+                <img src='../public/logo.svg' className="logo"/>
                 <div className='main_menu_flex'>
                     <div className='menu_startups'>Startups</div>
                     <div className='menu_contact'>Contact</div>
                     <div className='menu_button'>Work with us!</div>
                 </div>
             </header>
-
+            <Banner/>
             <div className="we_create">
                 <p className='we_create__title'>We Create Startups.</p>
                 <p className='we_create__description'>We are startup studio that develops and launches new
@@ -80,7 +82,7 @@ function App() {
                     <p className="solving_container__about__description">We love solving problems!</p>
                     <img className="solving_container__about__revert_like" src="../public/like.png" alt="like"/>
                 </div>
-                <Banner/>
+
             </div>
             <div className="who_we_are-modified">
                 <p className="who_we_are-modified__title"> Our core values</p>
@@ -100,9 +102,9 @@ function App() {
             <div className="our_works">
                 <p className="our_works__title">Our works</p>
                 <div className="our_works__plates">
-                    {plates.map((data) => {
+                    {plates.map((data,i) => {
                         return (
-                            <Plate
+                            <Plate key={i*Math.random()}
                                 description={data.description}
                                 title={data.title}
                                 image={data.img}
@@ -160,9 +162,14 @@ function App() {
                 </div>
                 <div className="footer__follow">
                     <h3 className="footer__follow__follow-us">Follow us</h3>
-                    <FontAwesomeIcon className="footer__follow__messenger" icon="fa-brands fa-twitter" />
-                    <FontAwesomeIcon className="footer__follow__messenger" icon="fa-brands fa-linkedin" />
-                    <FontAwesomeIcon className="footer__follow__messenger" icon="fa-brands fa-instagram" />
+                    <ul>
+                        <li><FontAwesomeIcon className="footer__follow__messenger" icon="fa-brands fa-twitter" /></li>
+                        <li><FontAwesomeIcon className="footer__follow__messenger" icon="fa-brands fa-linkedin" /></li>
+                        <li><FontAwesomeIcon className="footer__follow__messenger" icon="fa-brands fa-instagram" /></li>
+                    </ul>
+
+
+
                 </div>
             </footer>
         </>
