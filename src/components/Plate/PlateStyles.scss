@@ -1,5 +1,6 @@
 $complementaryGreen: #46B8C8;
 $fontFamily: Circular Std, sans-serif;
+$buttonTransition: background-color 1s;
 $titlesColors: 'tolq' #A9BC87,
 'feedback' #8BB5C9,
 'codekeeper' #00A0B6,
@@ -54,6 +55,7 @@ $titlesColors: 'tolq' #A9BC87,
     cursor: pointer;
     border: 1px solid $complementaryGreen;
     color: $complementaryGreen;
+    transition: $buttonTransition;
     border-radius: 25px;
     font-family: $fontFamily;
     font-size: 18px;
@@ -62,5 +64,9 @@ $titlesColors: 'tolq' #A9BC87,
     letter-spacing: 0em;
     text-align: center;
     margin-top: 20px;
+  }
+  &__button:hover{
+    background-color:$complementaryGreen ;
+    color: #fff;
   }
 }
