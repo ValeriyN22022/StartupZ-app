@@ -92,7 +92,7 @@ $fontFamily:  Circular Std, sans-serif;
 .we_create{
   height: 507px;
   margin-block-start: 200px;
-  background-image: url("../public/background-image-x3.png");
+  background-image: url("assets/images/background-image-x3.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
@@ -157,7 +157,7 @@ $fontFamily:  Circular Std, sans-serif;
 
 .who_we_are, .who_we_are-modified{
   padding-top: 150px;
-  background: no-repeat right  #FBFAFA url("../public/question.svg");
+  background: no-repeat right  #FBFAFA url("assets/images/question.svg");
   background-position-x: 90%;
   background-position-y: 25%;
   &__title{
@@ -322,7 +322,7 @@ $fontFamily:  Circular Std, sans-serif;
   }
 }
 .who_we_are-modified{
-  background: no-repeat right  #FBFAFA url("../public/light.svg");
+  background: no-repeat right  #FBFAFA url("assets/images/light.svg");
   background-position-x: 90%;
   background-position-y: 25%;
 }
@@ -359,7 +359,7 @@ $fontFamily:  Circular Std, sans-serif;
   align-items: center;
   justify-content: space-evenly;
   height: 550px;
-  background: url(../public/images/hiring_background_left.png) repeat-y 0 50%, url(../public/images/hiring_background_right.png) repeat-y 100% 50%;
+  background: url(assets/images/hiring_background_left.png) repeat-y 0 50%, url(assets/images/hiring_background_right.png) repeat-y 100% 50%;
   background-size: 320px 290px;
   background-repeat: no-repeat;
   &__title{
@@ -409,7 +409,7 @@ $fontFamily:  Circular Std, sans-serif;
   padding-left:$menuOutsideMargins ;
   padding-bottom: 20px;
   color: #fff;
-  background: #FFC351 url(../public/images/rocket.png) repeat-y 100% 100%;
+  background: #FFC351 url(assets/images/rocket.png) repeat-y 100% 100%;
   background-size: 660px 550px;
   background-repeat: no-repeat;
 

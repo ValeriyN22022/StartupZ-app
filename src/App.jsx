@@ -37,7 +37,7 @@ function App() {
     return (
         <>
             <header className='main_menu'>
-                <img src='../public/logo.svg' className="logo"/>
+                <img src='assets/images/logo.png' className="logo"/>
                 <div className='main_menu_flex'>
                     <div className='menu_startups'>Startups</div>
                     <div className='menu_contact'>Contact</div>
@@ -78,9 +78,9 @@ function App() {
             </div>
             <div className="solving_container">
                 <div className="solving_container__about">
-                    <img className="solving_container__about__like" src="../public/like.png" alt="like"/>
+                    <img className="solving_container__about__like" src="assets/images/like.png" alt="like"/>
                     <p className="solving_container__about__description">We love solving problems!</p>
-                    <img className="solving_container__about__revert_like" src="../public/like.png" alt="like"/>
+                    <img className="solving_container__about__revert_like" src="assets/images/like.png" alt="like"/>
                 </div>
 
             </div>
@@ -116,11 +116,11 @@ function App() {
                 </div>
             </div>
             <div className="about_startups_container">
-                <img className="about_startups_container__about__like" src="../public/like.png" alt="like"/>
+                <img className="about_startups_container__about__like" src="assets/images/like.png" alt="like"/>
                 <p className="about_startups_container__about__description">Startups create a world that actually is
                     better.
                     Any problem that can be solved, will be solved by a startup, and that is a huge opportunity.</p>
-                <img className="about_startups_container__about__revert_like" src="../public/like.png" alt="like"/>
+                <img className="about_startups_container__about__revert_like" src="assets/images/like.png" alt="like"/>
             </div>
             <div className="hiring_container">
                 <p className="hiring_container__title">We are hiring!</p>
@@ -142,7 +142,7 @@ function App() {
             </div>
             <footer className='footer'>
                 <div className="footer__logo">
-                    <img src="../public/logo.svg" alt="logo" className="footer__logo__logo"/>
+                    <img src="assets/images/logo.svg" alt="logo" className="footer__logo__logo"/>
                     <div className="p footer__logo__copyright">© 2020 Startupz. All rights reserved.</div>
                 </div>
                 <div className="footer__companies">

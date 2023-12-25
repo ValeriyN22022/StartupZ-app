@@ -23,7 +23,7 @@ export default function Banner(){
                     </div>
                     <div className="solving_container__banner__cancel">X</div>
                 </div>
-                <div><img src="../../../public/human.png" alt="human" className="solving_container__banner__image"/></div>
+                <div><img src="../../assets/images/human.png" alt="human" className="solving_container__banner__image"/></div>
             </div>
         </>
     )
